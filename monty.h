@@ -19,9 +19,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -31,7 +31,7 @@ typedef struct stack_s
  * @line_content: line content
  * @s_flag: flag change stack or queue
  * Description: carries data through the program
- */	
+ */
 typedef struct data_s
 {
 	char *arg;
@@ -52,8 +52,8 @@ extern data_t data;
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
@@ -62,7 +62,7 @@ char  *clean_line(char *content);
 void _push(stack_t **head, unsigned int number);
 void _pall(stack_t **head, unsigned int number);
 void _pint(stack_t **head, unsigned int number);
-int function_handler(char *content, stack_t **head, unsigned int counter, FILE *file);
+int _handle(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void _pop(stack_t **head, unsigned int counter);
 void _swap(stack_t **head, unsigned int counter);
