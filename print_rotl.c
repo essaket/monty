@@ -6,7 +6,7 @@
   *@counter: number of lines in file
   *Return: nothing
  */
-void _rotl(stack_t **head,  __attribute_((unused)) unsigned int counter)
+void _rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 {
 	stack_t *tmp = *head, *aux;
 
