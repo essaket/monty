@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
-* function_handler - calls the function
+* _handle - calls the function
 * @content: line content
 * @stack: head of the stack
 * @counter: number of lines in file
 * @file: monty file
 * Return: nothing
 */
-int f_handle(char *content, stack_t **stack, unsigned int counter, FILE *file)
+int _handle(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	unsigned int i = 0;
 	char *op;
