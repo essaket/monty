@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _stack - set flag to stack
+ * _stack - set flag to the stack
  * @head: head of the stack
  * @counter: number of lines in file
  * Return: nothing
