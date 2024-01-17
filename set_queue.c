@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _queue - set the flag to queue
+ * _queue - set the flag to the queue
  * @head: head of the stack
  * @counter: number of lines in file
  * Return: nothing
